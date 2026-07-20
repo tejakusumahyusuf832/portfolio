@@ -109,7 +109,7 @@ nav {
     text-align: center; /* Ensures content is centered */
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 100px 20px 0 20px;
 }
 
 /* ADDED STYLE FOR PROFILE PICTURE */
