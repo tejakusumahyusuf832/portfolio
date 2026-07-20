@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yusuf Tejakusumah | Data Scientist</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-content">
+            <a href="#home" class="logo">YT.</a>
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home" class="hero reveal">
+        <!-- ADDED PROFILE PICTURE HERE -->
+        <img src="assets/profile-pic.jpg" alt="Portrait of Yusuf Tejakusumah" class="profile-pic">
+        
+        <h1>Hi, I'm <span class="highlight">Yusuf Tejakusumah</span> 👋</h1>
+        <h3>Profit-Driven Data Scientist</h3>
+        <p class="hero-subtitle">
+            I translate complex mathematical concepts into actionable business strategies.<br>
+            Specialized in machine learning, business analytics, and building data pipelines that deliver measurable ROI.
+        </p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/tejakusumahyusuf832/" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+            </a>
+            <a href="mailto:tejakusumahyusuf832@gmail.com">
+                <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+            </a>
+        </div>
+    </header>
+
+    <section id="skills" class="section reveal">
+        <h2 class="section-title">🛠️ Technical Arsenal</h2>
+        <div class="skills-container">
+            <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+            <img src="https://img.shields.io/badge/SQL-PostgreSQL_%7C_SQL_Server-336791?style=flat-square&logo=postgresql&logoColor=white" alt="SQL">
+            <img src="https://img.shields.io/badge/ML-Scikit_Learn_%7C_XGBoost_%7C_LightGBM-F7931E?style=flat-square&logo=scikit-learn&logoColor=white" alt="Machine Learning">
+            <img src="https://img.shields.io/badge/MLOps-Airflow_%7C_Docker_%7C_MLflow-2496ED?style=flat-square&logo=docker&logoColor=white" alt="MLOps">
+            <img src="https://img.shields.io/badge/Data_Viz-Power_BI_%7C_Matplotlib-F2C811?style=flat-square&logo=powerbi&logoColor=black" alt="Data Viz">
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2 class="section-title reveal">🚀 Featured Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card reveal">
+            <div class="project-content">
+                <h3>1. SKZ PACE: Predictive Analytics & Content Ecosystem</h3>
+                <p class="project-tagline">Bridging the gap between raw YouTube metadata and actionable digital strategy.</p>
+                <div class="project-image-container">
+                    <img src="assets/dashboard-demo.gif" alt="SKZ PACE Power BI Dashboard Animation" class="project-image">
+                    <p class="image-caption">Interactive Power BI Dashboard visualizing content pillar engagement and lifetime velocity.</p>
+                </div>
+                <p><strong>The Challenge:</strong> Content strategy often relies on superficial native analytics. I built a system to extract granular, semantic insights into how different video formats influence fandom retention and long-term channel momentum.</p>
+                <p><strong>The Engine:</strong> A full-stack ELT pipeline orchestrating daily metadata ingestion via <strong>Dockerized Apache Airflow</strong> and <strong>GitHub Actions</strong>. I engineered an NLP pipeline fine-tuning a <strong>Hugging Face</strong> model (XLM-RoBERTa), using <strong>Gemini Pro Extended</strong> to establish ground-truth labels for multilingual sentiment extraction.</p>
+                <p><strong>The Impact:</strong></p>
+                <ul>
+                    <li>Achieved an <strong>87.76% accuracy rate</strong> in sentiment extraction from 200k+ unstructured comments.</li>
+                    <li>Uncovered actionable business intelligence, including quantifying a "Viral Dilution Effect" and identifying core loyalty-driving content with an 18-day half-life.</li>
+                    <li><em>Currently developing a Predictive A/B Scenario Simulator to forecast video engagement rates.</em></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal">
+            <div class="project-content">
+                <h3>2. Telco Customer Churn Prediction</h3>
+                <p class="project-tagline">Maximizing Retention ROI via Behavioral Trend Analysis.</p>
+                <div class="project-image-container">
+                    <img src="assets/telco-churn-pred-dashboard.png" alt="Telco Churn ROI Dashboard" class="project-image">
+                    <p class="image-caption">Streamlit dashboard analyzing the financial impact of predictive retention campaigns.</p>
+                </div>
+                <p><strong>The Challenge:</strong> Traditional churn models prioritize accuracy, which fails to account for the financial asymmetry between losing a high-value customer and the cost of sending a retention offer. The goal was to predict churn based purely on a user's first 4 weeks of behavior.</p>
+                <p><strong>The Engine:</strong> Engineered 39 unit-invariant behavioral features (e.g., trend deltas, volatility shifts, Gini coefficients) to quantify user disengagement. Segmented users with <strong>UMAP and K-Means</strong> and trained an <strong>XGBoost</strong> model optimized via <strong>Optuna</strong> and tracked with <strong>MLflow</strong>.</p>
+                <p><strong>The Impact:</strong></p>
+                <ul>
+                    <li>Achieved an <strong>AUC-ROC of 0.924</strong>.</li>
+                    <li>Shifted from a standard probability threshold (0.5) to a profit-optimized threshold (0.0201), prioritizing a <strong>99% Recall</strong> to catch almost every potential churner.</li>
+                    <li>Generated a projected <strong>981% ROI</strong> and <strong>LKR 5.04M Net Profit</strong> by identifying "Early Burnout" segments.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal">
+            <div class="project-content">
+                <h3>3. NYC Taxi Fare Prediction</h3>
+                <p class="project-tagline">Geospatial Regression Analysis & Automated EDA.</p>
+                <p><strong>The Challenge:</strong> Estimating taxi fares in New York City requires processing complex spatial-temporal data and rigorous statistical validation.</p>
+                <p><strong>The Engine:</strong> Constructed a robust regression pipeline using <strong>Scikit-Learn Custom Transformers</strong> to handle anomalies and calculate geodesic distances (via Ellipsoid GRS-80). I developed a custom Python module (<code>SimpleExploratoryDataAnalysis.py</code>) that dynamically executes statistical hypothesis tests (Normality, Correlation, Chi-Square) based on data distribution.</p>
+                <p><strong>The Impact:</strong></p>
+                <ul>
+                    <li>Successfully benchmarked multiple models, selecting a <strong>LightGBM</strong> model optimized via Bayesian optimization (Optuna).</li>
+                    <li>Achieved a test <strong>R<sup>2</sup> of 0.81</strong> and an <strong>RMSE of $4.06</strong>, accurately capturing fare trends despite financial heteroscedasticity.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal">
+            <div class="project-content">
+                <h3>4. Logistic Regression from Scratch</h3>
+                <p class="project-tagline">Algorithmic Deep Dive & Mathematical Engineering.</p>
+                <blockquote class="project-quote">
+                    <strong>Why no "Business Impact" here?</strong> While my other projects focus on solving business problems, this project was built to demonstrate foundational mastery. This is a look <em>under the hood</em> of machine learning.
+                </blockquote>
+                <p><strong>The Motivation:</strong> To move beyond the "Black Box" of standard libraries like Scikit-Learn by manually deriving and implementing the underlying optimization mathematics in pure <strong>Python and NumPy</strong>.</p>
+                <p><strong>The Mechanics:</strong></p>
+                <ul>
+                    <li><strong>Stochastic Gradient Descent (SGD):</strong> Engineered to handle large datasets and escape local minima by updating weights iteratively for single training examples, guided by a simulated annealing learning rate schedule.</li>
+                    <li><strong>Elastic Regularization:</strong> Directly incorporated <strong>L1 (Lasso)</strong> and <strong>L2 (Ridge)</strong> penalties into the custom gradient calculation to enforce sparsity and prevent model overfitting.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section reveal">
+        <h2 class="section-title">🎓 Education & Background</h2>
+        <div class="edu-card">
+            <h3>B.S. in Mathematics Education | University of Siliwangi</h3>
+            <p class="highlight">Cum Laude, 3.81 GPA</p>
+            <p>Focus: Pure Mathematics, Inferential Statistics, Geometric Analysis.</p>
+        </div>
+        <div class="edu-card mt-2">
+            <h3>Data Science For Business Development | Course-Net Indonesia</h3>
+            <p>Focus: End-to-end ML lifecycles, Business Development, Predictive Analytics.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Open to discussing data science, analytics, and business strategy. Feel free to connect!</p>
+        <p class="copyright">© 2026 Yusuf Tejakusumah.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
